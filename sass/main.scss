@@ -1,0 +1,50 @@
+// Genera CSS, fuentes estan en partials/
+
+@import "partials/normalize";
+@import "partials/base";
+
+* {
+    @include box-sizing(border-box);
+}
+
+body {
+    background-color: #111; font-family: $font-sans; text-align: center;
+}
+
+.ui-bati-btn {
+    @include border-radius(.5em);
+    @include box-shadow(5px 5px 0 #699);
+    background-color: #6480a3; border: 8px solid white; color: #FFFFFF; 
+    cursor: pointer; font-size: 4em; height: 160px; margin-bottom: .5em; 
+    width: 70%;
+
+    &:hover {
+        background-color: #808C99; 
+    }
+}
+
+.container {
+    bottom: 0; height: 100%; left: 0; margin: auto;
+     overflow: auto; position: relative; right: 0; top: 0;
+}
+
+.title {
+    color: $hotpink; font-weight: 700; font-size: 5em;
+    letter-spacing: 4px; line-height: 1em; margin: .5em 0; 
+    text-transform: uppercase;
+}
+
+a {
+    &:link,
+    &:visited {
+        color: $hotpink;
+    }
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+
+p {
+    color: rgba(255, 255, 255, 0.75);
+}

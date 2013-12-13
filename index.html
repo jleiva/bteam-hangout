@@ -28,8 +28,10 @@
 <body>
 <div class="container">
   <h1 class="title">B-Team</h1>
-  <audio class="js-batisound" src="assets/batman-song.mp3" preload></audio>
-  <a id="bati-sound" class="ui-bati-btn" href="https://plus.google.com/hangouts/_/event/ckoi4v4miigigpjv2csermd489g?authuser=0">To the Hangout <b>&rsaquo;</b></a>
+  <audio class="js-batisound" src="assets/batman-song.mp3" preload>
+       Your browser does not support the <code>audio</code> element.
+  </audio>
+  <a id="bati-sound" class="ui-bati-btn" href="">To the Hangout <b>&rsaquo;</b></a>
 
   <footer>
     <p><a href="https://twitter.com/marcialc">marcialc</a> & <a href="https://twitter.com/leivajd">leivajd</a> did this</p>
@@ -39,8 +41,12 @@
 
 </body>
 <script>
-  $('#bati-sound').on('click', function() {
+  $('#bati-sound').on('click', function(e) {
+    e.preventDefault();
     $('.js-batisound')[0].play();
-  })
+    setTimeout(function() {
+        window.location.href = "https://plus.google.com/hangouts/_/event/ckoi4v4miigigpjv2csermd489g?authuser=0";
+    }, 1000);
+  });
 </script>
 </html>

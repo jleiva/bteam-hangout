@@ -428,33 +428,41 @@ body {
   -webkit-box-shadow: 5px 5px 0 #669999;
   -moz-box-shadow: 5px 5px 0 #669999;
   box-shadow: 5px 5px 0 #669999;
-  text-indent: -119988px;
-  overflow: hidden;
-  text-align: left;
-  background: url(../img/play.png) no-repeat 50% 50% #6480a3;
+  background: no-repeat 50% 50% #6480a3;
   background-size: 79px 95px;
   border: 8px solid white;
   color: #FFF;
   cursor: pointer;
-  font-size: 4em;
-  height: 160px;
-  margin-bottom: .5em;
+  display: block;
+  font-size: 2em;
+  margin: 0 auto .5em;
+  padding: .5em 0;
+  text-decoration: none;
   width: 70%;
 }
 @media (min-width: 600px) {
   /* line 14, ../sass/main.scss */
   .ui-bati-btn {
     background-image: none;
+    font-size: 4em;
     text-align: center;
     text-indent: 0;
   }
 }
-/* line 28, ../sass/main.scss */
+/* line 27, ../sass/main.scss */
 .ui-bati-btn:hover {
   background-color: #808C99;
 }
+/* line 30, ../sass/main.scss */
+.ui-bati-btn:visited {
+  color: #FFF;
+}
+/* line 34, ../sass/main.scss */
+.ui-bati-btn b {
+  font-size: 1em;
+}
 
-/* line 33, ../sass/main.scss */
+/* line 39, ../sass/main.scss */
 .container {
   bottom: 0;
   height: 100%;
@@ -466,7 +474,7 @@ body {
   top: 0;
 }
 
-/* line 38, ../sass/main.scss */
+/* line 44, ../sass/main.scss */
 .title {
   color: #c6538c;
   font-weight: 700;
@@ -477,16 +485,16 @@ body {
   text-transform: uppercase;
 }
 
-/* line 46, ../sass/main.scss */
+/* line 52, ../sass/main.scss */
 a:link, a:visited {
   color: #c6538c;
 }
-/* line 49, ../sass/main.scss */
+/* line 55, ../sass/main.scss */
 a:hover {
   text-decoration: none;
 }
 
-/* line 55, ../sass/main.scss */
+/* line 61, ../sass/main.scss */
 p {
   color: rgba(255, 255, 255, 0.75);
 }

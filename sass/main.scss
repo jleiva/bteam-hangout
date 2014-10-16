@@ -47,6 +47,12 @@ body {
     text-transform: uppercase;
 }
 
+.scare {
+    @include rotate(15deg);
+    color: #fff; font-size: 3.5em; position: absolute; right: 0; top: -10px;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px $hotpink, 0 0 70px $hotpink, 0 0 80px $hotpink, 0 0 100px $hotpink, 0 0 150px $hotpink;
+}
+
 a {
     &:link,
     &:visited {
@@ -60,4 +66,21 @@ a {
 
 p {
     color: rgba(255, 255, 255, 0.75);
+}
+
+.holder {
+    margin: 0 auto; padding: 1em; position: relative; 
+    width: 70%;
+}
+
+#getting-started {
+    color: $hotpink;
+
+    b {
+        color: rgba(255, 255, 255, 1); display: block; font-size: 2.5em;
+    }
+    span {
+        @include inline-block;
+        padding: 10px; text-align: center;
+    }
 }

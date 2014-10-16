@@ -485,16 +485,61 @@ body {
   text-transform: uppercase;
 }
 
-/* line 52, ../sass/main.scss */
+/* line 50, ../sass/main.scss */
+.scare {
+  -webkit-transform: rotate(15deg);
+  -moz-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  -o-transform: rotate(15deg);
+  transform: rotate(15deg);
+  color: #fff;
+  font-size: 3.5em;
+  position: absolute;
+  right: 0;
+  top: -10px;
+  text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px #c6538c, 0 0 70px #c6538c, 0 0 80px #c6538c, 0 0 100px #c6538c, 0 0 150px #c6538c;
+}
+
+/* line 58, ../sass/main.scss */
 a:link, a:visited {
   color: #c6538c;
 }
-/* line 55, ../sass/main.scss */
+/* line 61, ../sass/main.scss */
 a:hover {
   text-decoration: none;
 }
 
-/* line 61, ../sass/main.scss */
+/* line 67, ../sass/main.scss */
 p {
   color: rgba(255, 255, 255, 0.75);
+}
+
+/* line 71, ../sass/main.scss */
+.holder {
+  margin: 0 auto;
+  padding: 1em;
+  position: relative;
+  width: 70%;
+}
+
+/* line 76, ../sass/main.scss */
+#getting-started {
+  color: #c6538c;
+}
+/* line 79, ../sass/main.scss */
+#getting-started b {
+  color: white;
+  display: block;
+  font-size: 2.5em;
+}
+/* line 82, ../sass/main.scss */
+#getting-started span {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  padding: 10px;
+  text-align: center;
 }
